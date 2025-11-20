@@ -1,0 +1,540 @@
+@font-face {
+    font-family: Badaboom;
+    src: url(fonts/BADABB_.ttf);
+}
+
+html{
+    scrollbar-width: none;
+}
+body{
+background-color: black;  
+margin: 10px;
+}
+header{
+    height: 50px;
+}
+.navigation{
+    display: flex;
+    float: right;
+    
+}
+
+.navigation a{
+     
+     text-decoration: none;
+     margin: 20px;
+     padding-right: 30px;
+     font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 35px;
+     color: rgb( 57, 255, 20);
+     -webkit-text-stroke: 1px black;
+    }
+
+.navigation a:hover{
+    transform: scale(1.3);
+    color: rgb(251,251,253);
+    -webkit-text-stroke: 1px black
+
+}
+
+main{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 82vh;
+    background-color: rgba(0, 255, 255, 0);
+    
+}
+.aboutben{
+    display: flex;
+    flex-direction: row;
+}
+.benimage img{
+    height: 500px;
+}
+
+.bentext h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(251,251,253);
+    -webkit-text-stroke: 0.5px rgb(25, 25, 25);
+}
+
+.bentext p{
+    font-size: 30px;
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: rgb(178,224,91);
+    -webkit-text-stroke: 0.5px black;
+    justify-content: center;
+}
+
+.ben10_characters{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    row-gap: 50px;
+}
+
+.ben10_characters img{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+
+
+.gwen_desc{
+    display: block;
+    background-color: aqua;
+    width: 40px;
+    height: 50px;
+    z-index: 10;
+    color: beige;
+}
+
+.gwen_img:hover + .gwen_desc{display: block;}
+
+.aboutwatch{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.watchtext h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(251,251,253);
+    -webkit-text-stroke: 0.5px rgb(25, 25, 25);
+}
+
+.watchtext p{
+    font-size: 30px;
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: rgb(178,224,91);
+    -webkit-text-stroke: 0.5px black;
+    justify-content: center;
+}
+
+.watchimage{
+    display: flex;
+    align-items: center;
+}
+.watchimage img{
+    padding: 0;
+    animation: slide 2s ease-in-out  infinite ;
+}
+
+@keyframes slide {
+    0%{transform: translate(0px);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(0px);}
+    
+}
+
+.azmuth{
+    display: inline;
+    color: tomato;
+     font-size: 30px;
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.azmuth:hover{
+    color: blue;
+
+}
+
+.ben10_watch_versions{
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ben10_watch_versions img{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid black ;
+    border-radius: 20px;
+}
+
+
+.ben10_watch_versions img:hover{
+   transform: scale(1.1);
+   animation: borderglow 5s linear infinite ;
+}
+
+@keyframes borderglow {
+    0%{border-color: rgba(7, 255, 7, 0.2);}
+    25%{border-color: rgba(7, 255, 7, 0.4);}
+    50%{border-color: rgba(7, 255, 7, 0.6);}
+    75%{border-color: rgba(7, 255, 7, 0.8);}
+    100%{border-color: rgba(7, 255, 7, 1);}
+    
+}
+.character_container{
+    align-items: center;
+    height: 200px;
+    width: 150px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: auto;
+    position: relative;
+   
+    border-radius: 20px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(4, 255, 4);
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    align-items: center;
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+    
+}
+
+.back{
+    
+    background-color: rgb(255, 225, 0);
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.back h1{
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+
+.back p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.main_head_h1{
+    font-size: 50px;
+    color: rgb(178,224,91);
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+
+.card_villain{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 4, 4);
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    align-items: center;
+}
+.card_villain:hover{
+    transform: rotateY(180deg);
+}
+.maincontainer{
+    width: 100%;
+    height: 100vh;
+    scrollbar-width: none;
+    
+    position: relative;
+}
+.watch{
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+}
+
+
+.maincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    min-height: 50vh;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch_click{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: brown;
+    background-image: url(alien_forms_image/watch_dial_green.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px;
+    transition: 0.25s;
+    cursor: pointer;
+    
+}
+
+.watch_click.active{
+    transform:scale(1.3);
+    background-image: url(alien_forms_image/cropped_circle_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px;
+    
+}
+
+.menu li{
+    list-style: none;
+    position: absolute;
+    left: 10px;
+    transform-origin: 275px;
+    border-radius: 50%;
+    transform: rotate(calc(360deg/10*var(--i)));
+}
+.menu li{
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s;
+}
+
+.menu.active li{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+}
+
+.menu li a{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gold;
+    transform: rotate(calc(360deg/-10*var(--i)));
+}
+
+.menu li a:hover{
+    background-color: rgb(7, 255, 7);
+    box-shadow: 1px 1px 1px tomato;
+}
+
+.menu li a:hover img{
+    transform: scale(1.5);
+}
+
+.ben10_characters_later{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    row-gap: 50px;
+}
+
+.ben10_characters_later img{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.character_container_later{
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: auto;
+    position: relative;
+   
+    border-radius: 20px;
+}
+.card_later{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(4, 255, 4);
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    align-items: center;
+}
+
+.front_later {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back_later {
+    
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+.card_later:hover .front_later img{
+    transform: translateY(-40px);
+    scale: 1.5;
+}
+.card_later:hover .back_later{
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.back_later{
+    margin-top: 60%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.back_later h1{
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+   -webkit-text-stroke: 0.5px;
+   -webkit-text-stroke-color:black ;
+    
+}
+.back_later p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.watchstart,
+.watchstop,
+.alien_hover{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.before_menu{
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 75%;
+    background-color: aliceblue;
+    left: -10%;
+    align-items: center;
+    visibility: hidden;
+}
+
+    
+.alien_enlarged_image{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+}
+
+.before_menu img{
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.after_menu{
+    display: flex;
+    align-items: center;align-self: center;
+    position: relative;
+    width: 250px;
+    height: 75%;
+    background-color: rgb(12, 142, 255);
+    left: 10%;
+    color: azure;
+    visibility: hidden;
+    
+}
+
+.alien_enlarged_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    visibility: hidden;
+    top:25%;
+    
+}
+
+.alien_enlarged_text h1{
+    font-family: "Badaboom",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(100,204,79);
+    font-weight: 100;
+}
+
+.alien_enlarged_text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(251,251,253);
+}
+
+#home_nav,#character_nav,#og_nav,#af_nav,#om_nav{
+    transform: scale(1.3);
+    color: rgb(255, 4, 4);
+}
+
+
+
