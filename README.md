@@ -1,4 +1,9 @@
 # Ben 10 Info Website
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-basic-yellow)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
+![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-lightgrey)
 
 A static, multi-page fan site dedicated to exploring the Ben 10 universe — covering Ben, the Omnitrix, key characters, and alien forms across series.
 
